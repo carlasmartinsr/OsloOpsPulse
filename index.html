@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Oslo Ops Pulse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="deco-bar"></div>
+
+  <header class="top">
+    <div class="brand">
+      <img class="brand-logo" src="logo-pink.png" alt="Oslo Ops Pulse" width="120" height="120">
+      <div>
+        <h1>Oslo Ops Pulse</h1>
+        <p>Cruise-ship calls, public holidays and city events that affect operations in Oslo </p>
+      </div>
+    </div>
+    <div class="source-note">
+      Sourced from the Oslo Havn 2026 Cruise Ship Booking List<br>
+      (official port document, updated 04.09.2026) · 190 calls, Dec 2025 – Dec 2026
+    </div>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <div class="segmented" id="viewToggle">
+      <button data-view="calendar" class="active">Calendar</button>
+      <button data-view="agenda">Full list</button>
+    </div>
+    <input type="search" id="search" placeholder="Search ship or cruise line…">
+    <select id="lineFilter"><option value="">All cruise lines</option></select>
+    <div class="spacer"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <section id="calendarView">
+    <div class="cal-card">
+      <div class="cal-nav">
+        <h2 id="monthLabel"></h2>
+        <div class="nav-btns">
+          <button class="today-btn" id="btnToday">Today</button>
+          <button id="btnPrev" aria-label="Previous month">‹</button>
+          <button id="btnNext" aria-label="Next month">›</button>
+        </div>
+      </div>
+      <div class="cal-grid" id="calDow"></div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+
+    <div class="detail" id="detail"></div>
+  </section>
+
+  <section id="agendaView" hidden>
+    <div class="agenda">
+      <div class="agenda-scroll" id="agendaList"></div>
+    </div>
+  </section>
+
+  <footer>
+    Quays: <strong>Filipstad</strong> (main cruise terminal) and <strong>Revierkaia</strong> — a few calls at Søndre Akershuskai.
+    Times are local port estimates (ETA/ETD) and can shift; passenger figures are each ship's booked capacity for that call, from the port's own booking list, not confirmed headcount.
+    Country chips mark the previous and next port so Norway-to-Norway and Norway-to-Denmark legs stand out at a glance.
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
