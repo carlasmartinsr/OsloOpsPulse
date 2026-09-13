@@ -15,9 +15,9 @@
  *   - tracks actual monthly usage in data/api-usage.json and stops calling the API once it's
  *     within a safety margin of the cap, logging what got skipped instead of guessing.
  *
- * NOTE: VesselAPI's public docs don't fully spell out the /search/vessels query params —
- * verify the request below against a real key before relying on this, and adjust checkShip()
- * if the request/response shape differs.
+ * The /search/vessels call uses filter.name (a bare `name` param 400s — VesselAPI rejects any
+ * query param it doesn't recognize). The ETA endpoint's exact response field for "destination"
+ * hasn't been confirmed against a real match yet — if flags come back oddly, check that first.
  */
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -84,7 +84,7 @@ function makeMeteredFetch(usage){
  * Costs up to 2 requests against the VesselAPI budget (search + eta lookup).
  */
 async function checkShip(meteredFetch, shipName, etaDate){
-  const searchUrl = `${API_BASE}/search/vessels?name=${encodeURIComponent(shipName)}`;
+  const searchUrl = `${API_BASE}/search/vessels?filter.name=${encodeURIComponent(shipName)}`;
   const searchRes = await meteredFetch(searchUrl, { headers: { Authorization: `Bearer ${API_KEY}` } });
   if(!searchRes.ok) throw new Error(`VesselAPI search failed (${searchRes.status}) for ${shipName}`);
   const searchData = await searchRes.json();
