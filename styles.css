@@ -35,6 +35,15 @@
   --c-event:#E0608C;
   --c-event-soft:#FCE4EC;
   --c-event-ink:#9C2F55;
+  --c-unplanned:#D97706;
+  --c-unplanned-soft:#FDF0DC;
+  --c-unplanned-ink:#8A4B06;
+  --c-cancelled:#DC2626;
+  --c-cancelled-soft:#FDE7E7;
+  --c-cancelled-ink:#8A1616;
+  --c-review:#0284C7;
+  --c-review-soft:#DCEEFB;
+  --c-review-ink:#075985;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -74,6 +83,15 @@
     --c-event:#FCA7B5;
     --c-event-soft:#3A2430;
     --c-event-ink:#F7C3D2;
+    --c-unplanned:#FBBF24;
+    --c-unplanned-soft:#3A2A10;
+    --c-unplanned-ink:#FDDD93;
+    --c-cancelled:#FF6B6B;
+    --c-cancelled-soft:#3A1616;
+    --c-cancelled-ink:#FFADAD;
+    --c-review:#38BDF8;
+    --c-review-soft:#123247;
+    --c-review-ink:#BAE6FD;
   }
 }
 :root[data-theme="dark"]{
@@ -113,6 +131,15 @@
   --c-event:#FCA7B5;
   --c-event-soft:#3A2430;
   --c-event-ink:#F7C3D2;
+  --c-unplanned:#FBBF24;
+  --c-unplanned-soft:#3A2A10;
+  --c-unplanned-ink:#FDDD93;
+  --c-cancelled:#FF6B6B;
+  --c-cancelled-soft:#3A1616;
+  --c-cancelled-ink:#FFADAD;
+  --c-review:#38BDF8;
+  --c-review-soft:#123247;
+  --c-review-ink:#BAE6FD;
 }
 
 *{box-sizing:border-box;}
@@ -270,12 +297,19 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 .icon-ship{ color:var(--ink-dim); }
 .icon-flag{ color:var(--c-holiday); }
 .icon-event{ color:var(--c-event); }
+.icon-alert{ color:var(--c-unplanned); }
+.icon-cancel{ color:var(--c-cancelled); }
+.icon-review{ color:var(--c-review); }
 .ship-chip{
   font-size:10.8px; font-weight:600; padding:2px 6px 2px 5px; border-radius:4px; white-space:nowrap;
   overflow:hidden; text-overflow:ellipsis; display:flex; align-items:center; gap:4px;
   background:var(--surface-3); color:var(--ink); line-height:1.5;
 }
 .ship-chip .dot{ width:6px; height:6px; border-radius:50%; flex:none; }
+.ship-chip.cancelled{ text-decoration:line-through; color:var(--ink-faint); border:1px solid var(--c-cancelled); background:var(--c-cancelled-soft); }
+.dot-row .pdot.cancelled{ outline:2px solid var(--c-cancelled); outline-offset:1px; }
+.ship-chip.review{ border:1px solid var(--c-review); background:var(--c-review-soft); }
+.dot-row .pdot.review{ outline:2px dashed var(--c-review); outline-offset:1px; }
 .cal-day .more{ font-size:10.5px; color:var(--ink-faint); padding-left:5px; font-weight:600; }
 .dot-row{ display:flex; flex-wrap:wrap; gap:3px; align-items:center; margin-top:1px; }
 .dot-row .pdot{ width:7px; height:7px; border-radius:50%; flex:none; }
@@ -286,6 +320,9 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 }
 .day-label.holiday{ background:var(--c-holiday-soft); color:var(--c-holiday-ink); }
 .day-label.event{ background:var(--c-event-soft); color:var(--c-event-ink); }
+.day-label.unplanned{ background:var(--c-unplanned-soft); color:var(--c-unplanned-ink); }
+.cal-day.is-unplanned{ background:var(--c-unplanned-soft); }
+.cal-day.is-unplanned.selected{ background:var(--accent-soft); }
 
 @media (max-width:640px){
   .cal-nav{ padding:11px 12px; }
@@ -314,7 +351,20 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 .call-ship .dot{ width:9px; height:9px; border-radius:50%; flex:none; }
 .call-ship-name{ font-weight:600; font-size:14.5px; white-space:nowrap; display:inline-flex; align-items:center; gap:5px; }
 .call-ship-name svg{ color:var(--ink-faint); width:14px; height:14px; }
+.call-ship-name.cancelled{ text-decoration:line-through; color:var(--ink-faint); }
 .call-line{ font-size:11.5px; color:var(--ink-faint); }
+.cancel-badge{
+  font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+  padding:1px 6px; border-radius:4px; background:var(--c-cancelled-soft); color:var(--c-cancelled-ink);
+  white-space:nowrap;
+}
+.cancel-reason{ font-size:11.5px; color:var(--c-cancelled-ink); margin-top:3px; }
+.review-badge{
+  font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+  padding:1px 6px; border-radius:4px; background:var(--c-review-soft); color:var(--c-review-ink);
+  white-space:nowrap;
+}
+.review-reason{ font-size:11.5px; color:var(--c-review-ink); margin-top:3px; }
 .call-route{ font-size:12.5px; color:var(--ink-dim); display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
 .ccode{
   font-size:9.5px; font-weight:700; padding:1px 5px; border-radius:4px; letter-spacing:.03em;
@@ -340,6 +390,7 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 .occasion-icon svg{ width:20px; height:20px; }
 .occasion-row.holiday .occasion-icon{ background:var(--c-holiday-soft); color:var(--c-holiday); }
 .occasion-row.event .occasion-icon{ background:var(--c-event-soft); color:var(--c-event); }
+.occasion-row.unplanned .occasion-icon{ background:var(--c-unplanned-soft); color:var(--c-unplanned); }
 .occasion-body{ min-width:0; }
 .occasion-title{ font-weight:600; font-size:14.5px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
 .occasion-kind{
@@ -347,6 +398,7 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 }
 .occasion-row.holiday .occasion-kind{ background:var(--c-holiday-soft); color:var(--c-holiday-ink); }
 .occasion-row.event .occasion-kind{ background:var(--c-event-soft); color:var(--c-event-ink); }
+.occasion-row.unplanned .occasion-kind{ background:var(--c-unplanned-soft); color:var(--c-unplanned-ink); }
 .occasion-time{ font-size:12.5px; color:var(--ink-dim); margin-top:2px; }
 .occasion-desc{ font-size:12.5px; color:var(--ink-dim); margin-top:5px; line-height:1.5; }
 .occasion-link{ font-size:12px; margin-top:6px; display:inline-block; color:var(--accent); font-weight:600; text-decoration:none; }
@@ -382,6 +434,8 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 .ad-ship{ display:flex; align-items:center; gap:9px; min-width:0; flex-wrap:wrap; }
 .ad-ship .dot{ width:9px; height:9px; border-radius:50%; flex:none; }
 .ad-ship-name{ font-weight:600; font-size:14px; }
+.ad-ship-name.cancelled{ text-decoration:line-through; color:var(--ink-faint); }
+.stat .value .review-count{ color:var(--c-review); }
 .ad-line{ font-size:11.5px; color:var(--ink-faint); }
 .ad-route{ font-size:12px; color:var(--ink-dim); display:flex; gap:5px; align-items:center; flex-wrap:wrap; width:100%; margin-top:2px; }
 .ad-times{ text-align:right; font-size:12.5px; }
@@ -393,6 +447,7 @@ input[type="search"]:focus, select:focus, button:focus-visible{
 }
 .agenda-occasion.holiday{ background:var(--c-holiday-soft); color:var(--c-holiday-ink); }
 .agenda-occasion.event{ background:var(--c-event-soft); color:var(--c-event-ink); }
+.agenda-occasion.unplanned{ background:var(--c-unplanned-soft); color:var(--c-unplanned-ink); }
 .agenda-occasion svg{ flex:none; width:15px; height:15px; }
 .agenda-occasion b{ font-weight:700; }
 

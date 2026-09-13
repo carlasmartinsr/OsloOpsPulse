@@ -1,0 +1,36 @@
+name: Check for cruise call cancellations
+
+on:
+  schedule:
+    - cron: "0 6 * * *"    # once a day — the free VesselAPI tier is 150 requests/month
+  workflow_dispatch: {}     # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run AIS cancellation check
+        env:
+          VESSELAPI_KEY: ${{ secrets.VESSELAPI_KEY }}
+        run: node scripts/check-cancellations.mjs
+
+      - name: Commit updated data if changed
+        run: |
+          if git diff --quiet -- data/flags.json data/checked-calls.json data/api-usage.json; then
+            echo "No change to data files"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/flags.json data/checked-calls.json data/api-usage.json
+          git commit -m "Update AIS review flags"
+          git push

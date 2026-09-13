@@ -200,9 +200,50 @@ const CALLS = RAW.map(r => ({
   ship:r[4], pax:r[5], line:r[6], quay:r[7], from:r[8], to:r[9]
 }));
 
+/* ---------- cancellations ---------- */
+/* Mark a scheduled call as cancelled without removing it from the booking list.
+   Matched by ship + etaDate. Add an entry here as soon as a call is cancelled or postponed. */
+const CANCELLATIONS = [
+  // { ship:"AIDAnova", etaDate:"2026-01-13", reason:"Cancelled by operator — technical issue, no replacement call." },
+];
+function cancellationFor(c){
+  return CANCELLATIONS.find(x => x.ship===c.ship && x.etaDate===c.etaDate) || null;
+}
+CALLS.forEach(c=>{
+  const can = cancellationFor(c);
+  c.cancelled = !!can;
+  c.cancelReason = can ? can.reason : null;
+});
+
+/* ---------- automatic review flags ---------- */
+/* data/flags.json is written by scripts/check-cancellations.mjs, run on a schedule (see
+   .github/workflows/check-cancellations.yml). It cross-checks upcoming calls against live AIS
+   vessel-tracking data and flags ones that look off — it never confirms a cancellation on its own.
+   A flagged call still needs a human to check and, if real, add it to CANCELLATIONS above. */
+let REVIEW_FLAGS = [];
+function reviewFlagFor(c){
+  return REVIEW_FLAGS.find(x => x.ship===c.ship && x.etaDate===c.etaDate) || null;
+}
+function applyReviewFlags(){
+  CALLS.forEach(c=>{
+    const flag = c.cancelled ? null : reviewFlagFor(c);
+    c.reviewFlag = !!flag;
+    c.reviewReason = flag ? flag.reason : null;
+  });
+}
+applyReviewFlags();
+fetch("data/flags.json", { cache:"no-store" })
+  .then(r => r.ok ? r.json() : [])
+  .then(flags => { REVIEW_FLAGS = Array.isArray(flags) ? flags : []; applyReviewFlags(); renderAll(); })
+  .catch(()=>{ /* no flags file yet, or opened as a local file — review flags just stay empty */ });
+
 /* ---------- holidays & events ---------- */
-/* type: "holiday" (official Norwegian public holiday) | "event" (city event that can affect port/city operations) */
+/* type: "holiday" (official Norwegian public holiday) | "event" (planned city event affecting port/city operations)
+   | "unplanned" (unannounced disruption discovered after publication — e.g. a state funeral, a snap national day of
+   mourning, a strike or a security closure — anything that wasn't on the calendar when the season was planned) */
 const OCCASIONS = [
+  // { date:"2026-06-10", type:"unplanned", title:"State Funeral", start:"12:00", end:"15:00",
+  //   desc:"Unannounced national day of mourning declared with short notice; flags at half-mast, road closures near the Palace and cathedral expected to extend down to the harbour.", url:null },
   { date:"2025-12-31", type:"event", title:"New Year's Eve", start:null, end:"00:00", desc:"Fireworks over the harbour and Aker Brygge from midnight; large crowds along the waterfront near the cruise terminals.", url:null },
   { date:"2026-01-01", type:"holiday", title:"New Year's Day", start:null, end:null, desc:"Nyttårsdag — national public holiday. Most shops and services closed.", url:"https://publicholidays.no/2026-dates/" },
   { date:"2026-04-02", type:"holiday", title:"Maundy Thursday", start:null, end:null, desc:"Skjærtorsdag — national public holiday.", url:"https://publicholidays.no/2026-dates/" },
@@ -224,6 +265,9 @@ function occasionsOn(dateKey){ return OCCASIONS.filter(o=>o.date===dateKey); }
 const ICON_SHIP = `<svg class="icon-ship" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16l2-7h14l2 7"/><path d="M2 20c2 1.6 4 1.6 6 0s4-1.6 6 0 4 1.6 6 0"/><path d="M12 3v6"/><path d="M9 6h6"/></svg>`;
 const ICON_FLAG = `<svg class="icon-flag" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h14l-3 4 3 4H5"/></svg>`;
 const ICON_EVENT = `<svg class="icon-event" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.6L19.5 9l-4.6 3.4L16.5 18 12 14.6 7.5 18l1.6-5.6L4.5 9l5.7-1.4z"/></svg>`;
+const ICON_ALERT = `<svg class="icon-alert" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v4"/><path d="M12 17.5v.01"/></svg>`;
+const ICON_CANCEL = `<svg class="icon-cancel" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 8l8 8"/></svg>`;
+const ICON_REVIEW = `<svg class="icon-review" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.6-2.2 1.9-2.4 3.5"/><path d="M12 17v.01"/></svg>`;
 
 const QUAY_NAMES = { FIL:"Filipstad", REV:"Revierkaia", SAK:"Søndre Akershuskai" };
 
@@ -313,6 +357,9 @@ function renderStats(){
   const monthOccasions = OCCASIONS.filter(o => o.date.startsWith(thisMonthKey));
   const monthHolidays = monthOccasions.filter(o => o.type==="holiday");
   const monthEvents = monthOccasions.filter(o => o.type==="event");
+  const monthUnplanned = monthOccasions.filter(o => o.type==="unplanned");
+  const monthCancelled = inMonth.filter(c => c.cancelled);
+  const activeReviews = CALLS.filter(c => c.reviewFlag && `${c.etaDate}T${c.etaTime||"00:00"}` >= `${todayKey}T00:00`);
 
   const stats = [
     {
@@ -337,6 +384,16 @@ function renderStats(){
     },
     { label:"Total 2026 calls", value:"190", sub:"Dec 2025 – Dec 2026, official Oslo Havn list" },
     { label:"Busiest month", value:busiestLabel, sub:busiest ? `${busiest[1]} port calls` : "" },
+    {
+      label:`Disruptions in ${fmtMonthYear(currentMonth)}`,
+      value: `<span style="color:var(--c-unplanned)">${monthUnplanned.length + monthCancelled.length}</span>`,
+      sub: [...monthUnplanned.map(o=>o.title), ...(monthCancelled.length?[`${monthCancelled.length} cancelled call${monthCancelled.length>1?"s":""}`]:[])].join(", ") || "None"
+    },
+    {
+      label:"Needs review",
+      value: `<span class="review-count">${activeReviews.length}</span>`,
+      sub: activeReviews.length ? "Auto-flagged from AIS tracking — unconfirmed" : "No open flags from the AIS check"
+    },
   ];
 
   document.getElementById("stats").innerHTML = stats.map(s => `
@@ -354,7 +411,10 @@ function renderLegend(){
   `).join("")
   + `<span class="legend-item"><span class="dot" style="background:var(--c-other)"></span>Other line</span>`
   + `<span class="legend-item">${ICON_FLAG}&nbsp;Holiday</span>`
-  + `<span class="legend-item">${ICON_EVENT}&nbsp;Event</span>`;
+  + `<span class="legend-item">${ICON_EVENT}&nbsp;Event</span>`
+  + `<span class="legend-item">${ICON_ALERT}&nbsp;Unplanned</span>`
+  + `<span class="legend-item">${ICON_CANCEL}&nbsp;Cancelled</span>`
+  + `<span class="legend-item">${ICON_REVIEW}&nbsp;Needs review</span>`;
 
   const sel = document.getElementById("lineFilter");
   const allLines = Array.from(new Set(CALLS.map(c=>c.line).filter(Boolean))).sort();
@@ -394,12 +454,15 @@ function renderCalGrid(){
     const dayOccasions = occasionsOn(key);
     const holiday = dayOccasions.find(o=>o.type==="holiday");
     const event = dayOccasions.find(o=>o.type==="event");
+    const unplanned = dayOccasions.find(o=>o.type==="unplanned");
+    const anyCancelled = dayCalls.some(c=>c.cancelled);
+    const anyReview = dayCalls.some(c=>c.reviewFlag);
     const isToday = key===todayKey;
     const isPast = key < todayKey;
     const isSelected = key===selectedDayKey;
 
-    const iconsHTML = (dayCalls.length||holiday||event) ? `<div class="day-icons">
-        ${dayCalls.length?ICON_SHIP:""}${holiday?ICON_FLAG:""}${event?ICON_EVENT:""}
+    const iconsHTML = (dayCalls.length||holiday||event||unplanned) ? `<div class="day-icons">
+        ${dayCalls.length?ICON_SHIP:""}${holiday?ICON_FLAG:""}${event?ICON_EVENT:""}${unplanned?ICON_ALERT:""}${anyCancelled?ICON_CANCEL:""}${anyReview?ICON_REVIEW:""}
       </div>` : "";
 
     let bodyHTML;
@@ -407,19 +470,20 @@ function renderCalGrid(){
       const shownDots = dayCalls.slice(0,6);
       const extraDots = dayCalls.length - shownDots.length;
       bodyHTML = dayCalls.length ? `<div class="dot-row">
-          ${shownDots.map(c=>`<span class="pdot" style="background:${lineColor(c.line)}"></span>`).join("")}
+          ${shownDots.map(c=>`<span class="pdot ${c.cancelled?"cancelled":c.reviewFlag?"review":""}" style="background:${lineColor(c.line)}"></span>`).join("")}
           ${extraDots>0?`<span class="pmore">+${extraDots}</span>`:""}
         </div>` : "";
     }else{
       const shown = dayCalls.slice(0,3);
       const extra = dayCalls.length - shown.length;
-      bodyHTML = `${shown.map(c=>`<div class="ship-chip" title="${c.ship} — ${c.line||""}"><span class="dot" style="background:${lineColor(c.line)}"></span>${c.ship}</div>`).join("")}
+      bodyHTML = `${shown.map(c=>`<div class="ship-chip ${c.cancelled?"cancelled":c.reviewFlag?"review":""}" title="${c.ship} — ${c.line||""}${c.cancelled?" — CANCELLED":c.reviewFlag?" — needs review":""}"><span class="dot" style="background:${lineColor(c.line)}"></span>${c.ship}</div>`).join("")}
         ${extra>0?`<div class="more">+${extra} more</div>`:""}
         ${holiday?`<div class="day-label holiday">${holiday.title}</div>`:""}
-        ${event?`<div class="day-label event">${event.title}</div>`:""}`;
+        ${event?`<div class="day-label event">${event.title}</div>`:""}
+        ${unplanned?`<div class="day-label unplanned">${unplanned.title}</div>`:""}`;
     }
 
-    cells += `<div class="cal-day clickable ${isToday?"today":""} ${isPast?"past":""} ${isSelected?"selected":""} ${holiday?"is-holiday":""}" data-day="${key}">
+    cells += `<div class="cal-day clickable ${isToday?"today":""} ${isPast?"past":""} ${isSelected?"selected":""} ${holiday?"is-holiday":""} ${unplanned?"is-unplanned":""}" data-day="${key}">
       <div class="cal-day-top"><div class="num">${d}</div>${iconsHTML}</div>
       ${bodyHTML}
     </div>`;
@@ -443,10 +507,15 @@ function renderCalGrid(){
   });
 }
 
+function occasionIcon(type){
+  if(type==="holiday") return ICON_FLAG;
+  if(type==="unplanned") return ICON_ALERT;
+  return ICON_EVENT;
+}
 function occasionCardHTML(o){
   const timeStr = o.start ? `${o.start}${o.end?" – "+o.end:""}` : (o.end ? `Until ${o.end}` : "All day");
   return `<div class="occasion-row ${o.type}">
-    <div class="occasion-icon">${o.type==="holiday"?ICON_FLAG:ICON_EVENT}</div>
+    <div class="occasion-icon">${occasionIcon(o.type)}</div>
     <div class="occasion-body">
       <div class="occasion-title">${o.title} <span class="occasion-kind">${o.type}</span></div>
       <div class="occasion-time mono">${timeStr}</div>
@@ -485,8 +554,10 @@ function renderDetail(){
         <div class="call-ship">
           <span class="dot" style="background:${lineColor(c.line)}"></span>
           <div>
-            <div class="call-ship-name">${ICON_SHIP} ${c.ship}</div>
+            <div class="call-ship-name ${c.cancelled?"cancelled":""}">${ICON_SHIP} ${c.ship}${c.cancelled?` <span class="cancel-badge">Cancelled</span>`:c.reviewFlag?` <span class="review-badge">Needs review</span>`:""}</div>
             <div class="call-line">${c.line||"Operator not listed"} · ${QUAY_NAMES[c.quay]||c.quay}</div>
+            ${c.cancelled && c.cancelReason?`<div class="cancel-reason">${c.cancelReason}</div>`:""}
+            ${!c.cancelled && c.reviewFlag && c.reviewReason?`<div class="review-reason">${c.reviewReason}</div>`:""}
           </div>
         </div>
         <div class="call-route">${routeHTML(c)}</div>
@@ -523,7 +594,7 @@ function renderAgenda(){
         if(shownOccasions.has(o.date+o.title)) return;
         shownOccasions.add(o.date+o.title);
         const od = toDateObj(o.date);
-        html += `<div class="agenda-occasion ${o.type}">${o.type==="holiday"?ICON_FLAG:ICON_EVENT} <span><b>${od.getDate()} ${od.toLocaleDateString("en-GB",{month:"short"})}</b> — ${o.title}${o.start?` (${o.start}${o.end?"–"+o.end:""})`:""}</span></div>`;
+        html += `<div class="agenda-occasion ${o.type}">${occasionIcon(o.type)} <span><b>${od.getDate()} ${od.toLocaleDateString("en-GB",{month:"short"})}</b> — ${o.title}${o.start?` (${o.start}${o.end?"–"+o.end:""})`:""}</span></div>`;
       });
     }
     const multiDay = c.etdDate !== c.etaDate;
@@ -534,9 +605,12 @@ function renderAgenda(){
       </div>
       <div class="ad-ship">
         <span class="dot" style="background:${lineColor(c.line)}"></span>
-        <span class="ad-ship-name">${c.ship}</span>
+        <span class="ad-ship-name ${c.cancelled?"cancelled":""}">${c.ship}</span>
+        ${c.cancelled?`<span class="cancel-badge">Cancelled</span>`:c.reviewFlag?`<span class="review-badge">Needs review</span>`:""}
         <span class="ad-line">${c.line||"Operator not listed"} · ${QUAY_NAMES[c.quay]||c.quay}</span>
         <div class="ad-route">${routeHTML(c)}</div>
+        ${c.cancelled && c.cancelReason?`<div class="cancel-reason">${c.cancelReason}</div>`:""}
+        ${!c.cancelled && c.reviewFlag && c.reviewReason?`<div class="review-reason">${c.reviewReason}</div>`:""}
       </div>
       <div class="ad-times mono">
         <div>Arr ${c.etaTime||"—"}</div>
