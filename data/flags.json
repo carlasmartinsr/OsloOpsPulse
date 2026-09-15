@@ -1,11 +1,5 @@
 [
   {
-    "ship": "Seven Seas Voyager",
-    "etaDate": "2026-09-13",
-    "reason": "Found vessel \"Seven Seas Voyager\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-09-13T18:09:19.227Z"
-  },
-  {
     "ship": "AIDAbella",
     "etaDate": "2026-09-15",
     "reason": "Found vessel \"AIDAbella\" but couldn't read its live destination/ETA (status 404).",
