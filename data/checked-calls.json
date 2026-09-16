@@ -18,5 +18,10 @@
     "ship": "Rotterdam",
     "etaDate": "2026-09-15",
     "checkedAt": "2026-09-14T11:39:47.465Z"
+  },
+  {
+    "ship": "AIDAmar",
+    "etaDate": "2026-09-17",
+    "checkedAt": "2026-09-16T10:46:27.043Z"
   }
 ]
