@@ -1,17 +1,5 @@
 [
   {
-    "ship": "AIDAbella",
-    "etaDate": "2026-09-15",
-    "reason": "Found vessel \"AIDAbella\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-09-14T11:39:47.408Z"
-  },
-  {
-    "ship": "Rotterdam",
-    "etaDate": "2026-09-15",
-    "reason": "Found vessel \"Rotterdam\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-09-14T11:39:47.465Z"
-  },
-  {
     "ship": "AIDAmar",
     "etaDate": "2026-09-17",
     "reason": "Found vessel \"AIDAmar\" but couldn't read its live destination/ETA (status 404).",
