@@ -256,10 +256,51 @@ const OCCASIONS = [
   { date:"2026-05-24", type:"holiday", title:"Whit Sunday", start:null, end:null, desc:"Første pinsedag — national public holiday.", url:"https://publicholidays.no/2026-dates/" },
   { date:"2026-05-25", type:"holiday", title:"Whit Monday", start:null, end:null, desc:"Andre pinsedag — national public holiday.", url:"https://publicholidays.no/2026-dates/" },
   { date:"2026-09-12", type:"event", title:"DNB Oslo Maraton", start:"09:00", end:"18:00", desc:"City-wide road race starting and finishing at Rådhusplassen, right by the harbour. Marathon starts 09:00, half marathon 13:00, 10K 16:20 — rolling street closures through the city centre until the evening.", url:"https://oslomaraton.no/en/" },
+  { date:"2026-09-19", type:"unplanned", title:"Demonstration — Karl Johans gate", start:null, end:null,
+    desc:"Demonstration against executions closed Karl Johans gate at the university for about 20 minutes. Added by hand from a field report; exact times not recorded.", url:null },
+  { date:"2026-10-08", type:"event", title:"Oktoberfest Oslo", start:"16:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Thu). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-09", type:"event", title:"Oktoberfest Oslo", start:"15:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Fri). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-10", type:"event", title:"Oktoberfest Oslo", start:"12:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Sat). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-15", type:"event", title:"Oktoberfest Oslo", start:"16:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Thu). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-16", type:"event", title:"Oktoberfest Oslo", start:"15:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Fri). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-17", type:"event", title:"Oktoberfest Oslo", start:"12:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Sat). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-22", type:"event", title:"Oktoberfest Oslo", start:"16:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Thu). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-23", type:"event", title:"Oktoberfest Oslo", start:"15:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Fri). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-10-24", type:"event", title:"Oktoberfest Oslo", start:"12:00", end:null, desc:"Large Oktoberfest tent at Youngstorget, a block north of Karl Johans gate (Sat). Runs three weekends: 8–10, 15–17 and 22–24 October; doors open 16:00 Thu, 15:00 Fri, 12:00 Sat. Crowds around Youngstorget in the evenings; no street closure announced by the organiser.", url:"https://www.oktoberfestoslo.com/?lang=en" },
+  { date:"2026-11-07", type:"event", title:"Jul i Vinterland opens — Spikersuppa", start:null, end:null,
+    desc:"Christmas market with ice rink and Ferris wheel in Spikersuppa, on Karl Johans gate in front of Stortinget and Nationaltheatret. Runs 7 Nov 2026 – 3 Jan 2027, closed 24 December. Busy pedestrian area between the station and the harbour throughout the season.", url:"https://www.julivinterland.no/" },
+  { date:"2026-11-29", type:"event", title:"Christmas tree lighting — Universitetsplassen (date unconfirmed)", start:null, end:null,
+    desc:"By tradition the Salvation Army lights the city's Christmas tree at Universitetsplassen on the first Sunday of Advent, which falls on 29 Nov in 2026. Date is inferred from that tradition; time and programme not yet published. Expect crowds at the top of Karl Johans gate.", url:null },
+  { date:"2026-12-10", type:"event", title:"Nobel Peace Prize Day", start:"13:00", end:null,
+    desc:"Award ceremony at Oslo City Hall (Rådhuset, on Rådhusplassen by the harbour) at 13:00. In the evening a torchlight procession (fakkeltog) walks up Karl Johans gate to the Grand Hotel, where the banquet is held — expect police, crowds and closures on Karl Johans gate and around Rådhusplassen. Procession time not yet published.", url:"https://www.nobelpeaceprize.org/nobels-fredspris/om-nobels-fredspris/slik-feires-fredsprisen/" },
   { date:"2026-12-25", type:"holiday", title:"Christmas Day", start:null, end:null, desc:"Første juledag — national public holiday.", url:"https://publicholidays.no/2026-dates/" },
   { date:"2026-12-26", type:"holiday", title:"St. Stephen's Day", start:null, end:null, desc:"Andre juledag — national public holiday.", url:"https://publicholidays.no/2026-dates/" }
 ];
 function occasionsOn(dateKey){ return OCCASIONS.filter(o=>o.date===dateKey); }
+
+/* ---------- auto-detected city events ---------- */
+/* data/city-events.json is written by scripts/scan-city-events.mjs on a schedule (see
+   .github/workflows/scan-city-events.yml). It pulls from the police log, Ruter disruptions and news
+   headlines, so it can catch demonstrations and street closures nobody listed above. Everything in it
+   is unverified — it is shown with an "Auto-detected" badge. To keep one, copy it into OCCASIONS by hand. */
+function escapeHTML(s){ return String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch])); }
+fetch("data/city-events.json", { cache:"no-store" })
+  .then(r => r.ok ? r.json() : [])
+  .then(events => {
+    if(!Array.isArray(events)) return;
+    const seen = new Set(OCCASIONS.map(o => o.date + "|" + o.title.toLowerCase()));
+    events.forEach(e=>{
+      if(!e || !/^\d{4}-\d{2}-\d{2}$/.test(e.date) || !e.title || seen.has(e.date + "|" + String(e.title).toLowerCase())) return;
+      OCCASIONS.push({
+        date:e.date, type:e.type==="event" ? "event" : "unplanned",
+        title:escapeHTML(e.title), start:e.start || null, end:e.end || null,
+        desc:escapeHTML(e.desc), url:/^https:\/\//.test(e.url || "") ? e.url : null,
+        auto:true, source:escapeHTML(e.source)
+      });
+    });
+    renderAll();
+  })
+  .catch(()=>{ /* no events file yet, or opened as a local file — only hand-entered occasions show */ });
 
 /* ---------- icons ---------- */
 const ICON_SHIP = `<svg class="icon-ship" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16l2-7h14l2 7"/><path d="M2 20c2 1.6 4 1.6 6 0s4-1.6 6 0 4 1.6 6 0"/><path d="M12 3v6"/><path d="M9 6h6"/></svg>`;
@@ -517,7 +558,7 @@ function occasionCardHTML(o){
   return `<div class="occasion-row ${o.type}">
     <div class="occasion-icon">${occasionIcon(o.type)}</div>
     <div class="occasion-body">
-      <div class="occasion-title">${o.title} <span class="occasion-kind">${o.type}</span></div>
+      <div class="occasion-title">${o.title} <span class="occasion-kind">${o.type}</span>${o.auto?` <span class="occasion-auto" title="Found automatically in ${o.source}; not verified">Auto-detected · ${o.source}</span>`:""}</div>
       <div class="occasion-time mono">${timeStr}</div>
       <div class="occasion-desc">${o.desc}</div>
       ${o.url?`<a class="occasion-link" href="${o.url}" target="_blank" rel="noopener">More info →</a>`:""}

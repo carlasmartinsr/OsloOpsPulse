@@ -1,0 +1,26 @@
+[
+  {
+    "id": "watch:bogstadveien-markedsdag:2026-05-30",
+    "source": "Bogstadveien.no",
+    "date": "2026-05-30",
+    "type": "event",
+    "title": "Market day — Bogstadveien, Majorstuen",
+    "start": "10:00",
+    "end": "18:00",
+    "desc": "Twice-yearly market day: Bogstadveien, Hegdehaugsveien and Valkyriegata are closed to cars and trams (Ruter reroutes tram 12 around Majorstuen), with about 1.2 km of stalls set up before opening.",
+    "url": "https://www.bogstadveien.no/markedsdag",
+    "detectedAt": "2026-09-21T15:03:30.457Z"
+  },
+  {
+    "id": "watch:bogstadveien-markedsdag:2026-09-19",
+    "source": "Bogstadveien.no",
+    "date": "2026-09-19",
+    "type": "event",
+    "title": "Market day — Bogstadveien, Majorstuen",
+    "start": "10:00",
+    "end": "18:00",
+    "desc": "Twice-yearly market day: Bogstadveien, Hegdehaugsveien and Valkyriegata are closed to cars and trams (Ruter reroutes tram 12 around Majorstuen), with about 1.2 km of stalls set up before opening.",
+    "url": "https://www.bogstadveien.no/markedsdag",
+    "detectedAt": "2026-09-21T15:03:30.457Z"
+  }
+]
