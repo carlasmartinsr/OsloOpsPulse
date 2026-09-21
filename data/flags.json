@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "ship": "MSC Preziosa",
+    "etaDate": "2026-09-22",
+    "reason": "Found vessel \"MSC Preziosa\" but couldn't read its live destination/ETA (status 404).",
+    "checkedAt": "2026-09-21T11:52:44.319Z"
+  }
+]
