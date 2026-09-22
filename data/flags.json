@@ -4,5 +4,11 @@
     "etaDate": "2026-09-22",
     "reason": "Found vessel \"MSC Preziosa\" but couldn't read its live destination/ETA (status 404).",
     "checkedAt": "2026-09-21T11:52:44.319Z"
+  },
+  {
+    "ship": "Artania",
+    "etaDate": "2026-09-23",
+    "reason": "Found vessel \"Artania\" but couldn't read its live destination/ETA (status 404).",
+    "checkedAt": "2026-09-22T10:53:34.459Z"
   }
 ]
