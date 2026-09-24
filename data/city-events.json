@@ -34,5 +34,17 @@
     "desc": "Nødetatene er på E18 inn mot Oslo sentrum på Frognerstranda der det er en bil som har hatt et sammenstøt med autovernet. Høyre og venstre kjørefelt er åpent, men det midtre er stengt. Vi er i kontakt med to personer som satt i bilen. De fremstår uskadd, men undersøkes av helsepersonell. Det er ingen personskader og ve…",
     "url": "https://politiloggen.politiet.no/",
     "detectedAt": "2026-09-23T22:07:18.221Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823895",
+    "source": "Ruter",
+    "date": "2026-09-24",
+    "type": "unplanned",
+    "title": "Nationaltheatret stengt for trikk fra i morgen 25.09 til 12.10",
+    "start": "04:00",
+    "end": null,
+    "desc": "Trikk 13 og 15 vil kjøre via Aker Brygge. Dette skyldes arbeid på infrastruktur.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-24T11:23:08.619Z"
   }
 ]
