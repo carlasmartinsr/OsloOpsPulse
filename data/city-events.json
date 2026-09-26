@@ -46,5 +46,17 @@
     "desc": "Trikk 13 og 15 vil kjøre via Aker Brygge. Dette skyldes arbeid på infrastruktur.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-09-24T11:23:08.619Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823888",
+    "source": "Ruter",
+    "date": "2026-09-27",
+    "type": "unplanned",
+    "title": "Buss 25 har omkjøring under fotballandskamp",
+    "start": "19:00",
+    "end": "23:30",
+    "desc": "Buss 25 retning Majorstuen stopper ikke på holdeplassene: Domus Athletica, Ullevål stadion (på brua), Eventyrveien, John Colletts plass, Ullevålsalléen, Ullevål sykehus, Vestre Aker kirke og Marienlyst.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-26T10:05:43.293Z"
   }
 ]
