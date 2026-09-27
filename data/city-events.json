@@ -70,5 +70,29 @@
     "desc": "Buss 25 retning Majorstuen stopper ikke på holdeplassene: Domus Athletica, Ullevål stadion (på brua), Eventyrveien, John Colletts plass, Ullevålsalléen, Ullevål sykehus, Vestre Aker kirke og Marienlyst.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-09-26T10:05:43.293Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70333-1",
+    "source": "Ruter",
+    "date": "2026-09-27",
+    "type": "event",
+    "title": "Avgangen er ca. 30 minutter forsinket",
+    "start": "23:35",
+    "end": null,
+    "desc": "Avgangen fra Simensbråten kl. 23:35 i retning Lysakerlokket er ca. 30 minutter forsinket. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-27T22:28:39.286Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70334-1",
+    "source": "Ruter",
+    "date": "2026-09-27",
+    "type": "event",
+    "title": "Avgangen er ca. 25 minutter forsinket",
+    "start": "23:50",
+    "end": null,
+    "desc": "Avgangen fra Simensbråten kl. 23:50 i retning Lysakerlokket er ca. 25 minutter forsinket. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-27T22:28:39.286Z"
   }
 ]
