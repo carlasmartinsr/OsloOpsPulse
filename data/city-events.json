@@ -48,6 +48,18 @@
     "detectedAt": "2026-09-24T11:23:08.619Z"
   },
   {
+    "id": "police:26lpzn",
+    "source": "Politiloggen",
+    "date": "2026-09-27",
+    "type": "event",
+    "title": "Ro og orden — Oslo Sentrum",
+    "start": "02:40",
+    "end": "03:20",
+    "desc": "Politiet er i Strøget passasjen og har stanset et slagsmål. Vi er i kontakt med vektere og de involverte på stedet. To vektere har fått skader og får tilsyn av amb. Vi jobber med å avklare hendelsesforløpet. En person kjøres til skadeavdelingen på OKL. Han er påført skader i ansiktet og på halsen. To vektere har statu…",
+    "url": "https://politiloggen.politiet.no/",
+    "detectedAt": "2026-09-27T04:22:05.163Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:823888",
     "source": "Ruter",
     "date": "2026-09-27",
