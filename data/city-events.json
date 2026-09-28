@@ -94,5 +94,89 @@
     "desc": "Avgangen fra Simensbråten kl. 23:50 i retning Lysakerlokket er ca. 25 minutter forsinket. Dette skyldes et arrangement.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-09-27T22:28:39.286Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70391-1",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 37 stopper ikke mellom St. Hanshaugen og Oslo bussterminal",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 37 stopper ikke mellom St. Hanshaugen og Oslo bussterminal. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70391-3",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 81 stopper ikke mellom Jernbanetorget og Hjortnes, mellom Jernbanetorget og Filipst…",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 81 stopper ikke mellom Jernbanetorget og Hjortnes, mellom Jernbanetorget og Filipstadveien og mellom Jernbanetorget og Sjølyst. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70391-2",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 70 stopper ikke fra Nationaltheatret til Kvadraturen",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 70 stopper ikke fra og med Nationaltheatret til og med Kvadraturen. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70388-1",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 30 stopper ikke mellom Kongsgården og Jernbanetorget og mellom Karenslyst allé og J…",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 30 stopper ikke mellom Kongsgården og Jernbanetorget og mellom Karenslyst allé og Jernbanetorget. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70388-2",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 31 stopper ikke mellom Maritim og Jernbanetorget",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 31 stopper ikke mellom Maritim og Jernbanetorget. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70404-2",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 160 stopper ikke på Holbergs plass og fra Nationaltheatret til Holbergs plass",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 160 stopper ikke på Holbergs plass og fra og med Nationaltheatret til og med Holbergs plass. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-70404-1",
+    "source": "Ruter",
+    "date": "2026-10-02",
+    "type": "event",
+    "title": "Linje 150 stopper ikke på Holbergs plass og fra Nationaltheatret til Holbergs plass",
+    "start": "11:15",
+    "end": "14:30",
+    "desc": "Linje 150 stopper ikke på Holbergs plass og fra og med Nationaltheatret til og med Holbergs plass. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-28T15:47:27.944Z"
   }
 ]
