@@ -96,6 +96,18 @@
     "detectedAt": "2026-09-27T22:28:39.286Z"
   },
   {
+    "id": "news:2026-09-29:unplanned",
+    "source": "News (tv2.no)",
+    "date": "2026-09-29",
+    "type": "unplanned",
+    "title": "Dieselbrølet varsler demonstrasjon mot dieselavgifter ved Stortinget",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by tv2.no. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOREtHWmdWRjY3eDJBVjVaYW5TVTY2OGowanpxRDRQNFJ1Tk01ZFlRb2hCWHNuaWp0dkVwV3NpUENIRFJacEVEWUFsS1lGSmp3aWNWLUZRbDh4V0wwOXllcnJjVVp3d3hSNG5lVkd6NEN4WlNuQlJaUDhFNEM2SmJuM09YQ25pTzNfakVpYzNGLUV6ZVQ2VzlJ?oc=5",
+    "detectedAt": "2026-09-29T14:59:28.460Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:2026-70391-1",
     "source": "Ruter",
     "date": "2026-10-02",
