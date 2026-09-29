@@ -97,15 +97,27 @@
   },
   {
     "id": "news:2026-09-29:unplanned",
-    "source": "News (tv2.no)",
+    "source": "News (TV 2)",
     "date": "2026-09-29",
     "type": "unplanned",
     "title": "Dieselbrølet varsler demonstrasjon mot dieselavgifter ved Stortinget",
     "start": null,
     "end": null,
-    "desc": "Headline reported by tv2.no. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "desc": "Headline reported by TV 2. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOREtHWmdWRjY3eDJBVjVaYW5TVTY2OGowanpxRDRQNFJ1Tk01ZFlRb2hCWHNuaWp0dkVwV3NpUENIRFJacEVEWUFsS1lGSmp3aWNWLUZRbDh4V0wwOXllcnJjVVp3d3hSNG5lVkd6NEN4WlNuQlJaUDhFNEM2SmJuM09YQ25pTzNfakVpYzNGLUV6ZVQ2VzlJ?oc=5",
     "detectedAt": "2026-09-29T14:59:28.460Z"
+  },
+  {
+    "id": "police:26spp2",
+    "source": "Politiloggen",
+    "date": "2026-09-29",
+    "type": "event",
+    "title": "Ro og orden — Sentrum - Stortorvet",
+    "start": "17:14",
+    "end": "17:54",
+    "desc": "Vi har kontroll på en person som har truet vektere med kniv og jobber med å klarlegge hendelsesforløpet. Hendelsen skal ha skjedd i forbindelse med et tyveri fra butikk. Vektere fikk selv kontroll på mistenkte. Vi oppretter sak og mistenkte blir pågrepet.",
+    "url": "https://politiloggen.politiet.no/",
+    "detectedAt": "2026-09-29T19:56:09.981Z"
   },
   {
     "id": "ruter:RUT:SituationNumber:2026-70391-1",
