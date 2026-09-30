@@ -63,5 +63,10 @@
     "ship": "Nieuw Statendam",
     "etaDate": "2026-09-29",
     "checkedAt": "2026-09-28T12:47:23.885Z"
+  },
+  {
+    "ship": "Mein Schiff 7",
+    "etaDate": "2026-10-01",
+    "checkedAt": "2026-09-30T11:50:58.151Z"
   }
 ]

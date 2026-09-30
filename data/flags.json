@@ -1,11 +1,5 @@
 [
   {
-    "ship": "AIDAnova",
-    "etaDate": "2026-09-28",
-    "reason": "AIS reports \"AIDAnova\" is currently headed to \"DKSKA\", not Oslo, ahead of its scheduled 2026-09-28 call.",
-    "checkedAt": "2026-09-27T11:18:35.719Z"
-  },
-  {
     "ship": "AIDAbella",
     "etaDate": "2026-09-29",
     "reason": "Found vessel \"AIDAbella\" but couldn't read its live destination/ETA (status 404).",
