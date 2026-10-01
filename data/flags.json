@@ -1,14 +1,1 @@
-[
-  {
-    "ship": "AIDAbella",
-    "etaDate": "2026-09-29",
-    "reason": "Found vessel \"AIDAbella\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-09-28T12:47:23.750Z"
-  },
-  {
-    "ship": "Nieuw Statendam",
-    "etaDate": "2026-09-29",
-    "reason": "AIS reports \"Nieuw Statendam\" is currently headed to \"NO SVG > NO MAN\", not Oslo, ahead of its scheduled 2026-09-29 call.",
-    "checkedAt": "2026-09-28T12:47:23.885Z"
-  }
-]
+[]
