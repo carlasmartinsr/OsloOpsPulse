@@ -68,5 +68,10 @@
     "ship": "Mein Schiff 7",
     "etaDate": "2026-10-01",
     "checkedAt": "2026-09-30T11:50:58.151Z"
+  },
+  {
+    "ship": "Sky Princess",
+    "etaDate": "2026-10-05",
+    "checkedAt": "2026-10-04T11:43:29.515Z"
   }
 ]
