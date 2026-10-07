@@ -274,5 +274,17 @@
     "desc": "Stopper ikke på Lakseberget, Blommenholm, Høvikodden, Solvikveien, Glassverkveien og Høvik kirke retning Oslo.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-09-30T10:59:12.499Z"
+  },
+  {
+    "id": "news:2026-10-07:unplanned",
+    "source": "News (Dagen)",
+    "date": "2026-10-07",
+    "type": "unplanned",
+    "title": "(+) Se bildene: Palestina­demonstrasjon i Oslo sentrum",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Dagen. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSG9Vb0FsSGRWdmhpQXhpaFNodm1hSkNqRXdQRkZSUFNwZFVQM3JSbkpkUnAzMUQzWGU2eEptd0llZ2taaS1zMHJQaVlwa0NRbmpmdmhYcWx5ZHEyZXJyQ2MwSUJjM05mWFQtSS14ZGh5QW5CTHd5OXdETXg5dnVoQ25XYjc3bDlqUHlCM21R?oc=5",
+    "detectedAt": "2026-10-07T20:28:33.630Z"
   }
 ]
