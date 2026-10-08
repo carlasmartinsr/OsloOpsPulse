@@ -73,5 +73,10 @@
     "ship": "Sky Princess",
     "etaDate": "2026-10-05",
     "checkedAt": "2026-10-04T11:43:29.515Z"
+  },
+  {
+    "ship": "Trollfjord",
+    "etaDate": "2026-10-09",
+    "checkedAt": "2026-10-08T12:43:59.678Z"
   }
 ]
