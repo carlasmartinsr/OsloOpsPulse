@@ -286,5 +286,17 @@
     "desc": "Headline reported by Dagen. 1 other report the same day (Aftenposten). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSG9Vb0FsSGRWdmhpQXhpaFNodm1hSkNqRXdQRkZSUFNwZFVQM3JSbkpkUnAzMUQzWGU2eEptd0llZ2taaS1zMHJQaVlwa0NRbmpmdmhYcWx5ZHEyZXJyQ2MwSUJjM05mWFQtSS14ZGh5QW5CTHd5OXdETXg5dnVoQ25XYjc3bDlqUHlCM21R?oc=5",
     "detectedAt": "2026-10-07T20:28:33.630Z"
+  },
+  {
+    "id": "news:2026-10-10:unplanned",
+    "source": "News (Radio Haugaland)",
+    "date": "2026-10-10",
+    "type": "unplanned",
+    "title": "Oslo S stengt for togtrafikk",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Radio Haugaland. 1 other report the same day (VartOslo). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93X3ZCNWdhclY4QkUwZEN0WWNjZXY4bVRod3JUamNoNmZEOTRfaHpzMzhJRXZOT3NscHBRYTBxLTh2OTNrRmhRdjZDS1hab0h6YU1DNDJUWXpGbDQ?oc=5",
+    "detectedAt": "2026-10-10T12:54:17.806Z"
   }
 ]
