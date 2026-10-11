@@ -277,15 +277,27 @@
   },
   {
     "id": "news:2026-10-07:unplanned",
-    "source": "News (Dagen)",
+    "source": "News (Aftenposten)",
     "date": "2026-10-07",
+    "type": "unplanned",
+    "title": "Tre år siden 7. oktober-angrepene: Demonstrasjoner deler Jernbanetorget i to",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Aftenposten. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVDkzVXQyNVNiU2s2Qm0za3J2ZXVjY255dE93Z3F0cGZnMFNRS0FQSmxmd0JXS2RINk9ZVjd3RldHelJuOU5OSTR0X1BQeUVPY2pRZWU5RHNWRVp1cG1Ib2M3aWkwbVZNSVZpb0tfakxhUWRpenJHSWlOVk50NmNhQjFzdmlRZ1dFdy1rMUt6SDRrcWdGYTZLUzNqMmFBQWFfZXl2ZXR5SG9PbkJwc09BcEpDOXhCSUt5?oc=5",
+    "detectedAt": "2026-10-07T20:28:33.630Z"
+  },
+  {
+    "id": "news:2026-10-08:unplanned",
+    "source": "News (Dagen)",
+    "date": "2026-10-08",
     "type": "unplanned",
     "title": "(+) Se bildene: Palestina­demonstrasjon i Oslo sentrum",
     "start": null,
     "end": null,
-    "desc": "Headline reported by Dagen. 1 other report the same day (Aftenposten). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "desc": "Headline reported by Dagen. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSG9Vb0FsSGRWdmhpQXhpaFNodm1hSkNqRXdQRkZSUFNwZFVQM3JSbkpkUnAzMUQzWGU2eEptd0llZ2taaS1zMHJQaVlwa0NRbmpmdmhYcWx5ZHEyZXJyQ2MwSUJjM05mWFQtSS14ZGh5QW5CTHd5OXdETXg5dnVoQ25XYjc3bDlqUHlCM21R?oc=5",
-    "detectedAt": "2026-10-07T20:28:33.630Z"
+    "detectedAt": "2026-10-11T13:18:08.320Z"
   },
   {
     "id": "news:2026-10-10:unplanned",
