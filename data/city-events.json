@@ -301,14 +301,14 @@
   },
   {
     "id": "news:2026-10-10:unplanned",
-    "source": "News (VårtOslo)",
+    "source": "News (Nettavisen)",
     "date": "2026-10-10",
     "type": "unplanned",
-    "title": "Oslo S stengt for togtrafikk hele lørdagen",
+    "title": "Oslo S stengt for togtrafikk",
     "start": null,
     "end": null,
-    "desc": "Headline reported by VårtOslo. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSGJEQS1ib0lIa2lyV3hKdk9TV1ljU3hZay1hNWZGSXRfMEtyc0llOW4tb2dZM3drZVZwYmZ4RzNJZ2xvaE96NDFtbmxpNnBWMHoyOHR0Q3ZpTlBRVm9meHR6WFJCdVFJdHUwcnNhYnVrckpQX3hzUHJpRVpld3B6aWEtaXMzZFZOekxDQlRaMFZ3UGtHVUY2MWROaEdETU0zS3hhNDFR?oc=5",
+    "desc": "Headline reported by Nettavisen. 1 other report the same day (VårtOslo). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVnVlMmhKN0dOTmVPNUZ1a0dRR3pOSHJObVpic2hHTzJOSjQ0bW9pZzdudENsYjJZeE5MY3l0UGZ4UWtPMUdZYXAxNGRrZjlIZHlhckxOZ3FsT1NsZkJQZ3FYQ05kTUs4cnJmWmEyUktUMGMtZjl0ZktXaExtc0wxM0hYSQ?oc=5",
     "detectedAt": "2026-10-10T12:54:17.806Z"
   }
 ]
