@@ -310,5 +310,17 @@
     "desc": "Headline reported by Nettavisen. 2 other reports the same day (VårtOslo, Tønsbergs Blad). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVnVlMmhKN0dOTmVPNUZ1a0dRR3pOSHJObVpic2hHTzJOSjQ0bW9pZzdudENsYjJZeE5MY3l0UGZ4UWtPMUdZYXAxNGRrZjlIZHlhckxOZ3FsT1NsZkJQZ3FYQ05kTUs4cnJmWmEyUktUMGMtZjl0ZktXaExtc0wxM0hYSQ?oc=5",
     "detectedAt": "2026-10-10T12:54:17.806Z"
+  },
+  {
+    "id": "news:2026-10-12:unplanned",
+    "source": "News (Dagbladet)",
+    "date": "2026-10-12",
+    "type": "unplanned",
+    "title": "Nå er Oslo S stengt",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Dagbladet. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPS0VDYWR0b1VQZm10azRXWGNMVGt4Z0FQSFZvOVRyU0IzaC1Gemd6bTVDRVAyUmpFUzZ6TG94aDZya0xmczdodFhKSFR1MkhITk1QcTV6OC1JWlFlSWpCaEtFSUhhZmF0X2xsT3E0a3JYNmEzSldidkU5VG9FM0JsTVRONnQxM3AzQlZ5ZDJSYUo4dGR6ZEE?oc=5",
+    "detectedAt": "2026-10-13T16:16:50.091Z"
   }
 ]
