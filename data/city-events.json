@@ -322,5 +322,17 @@
     "desc": "Headline reported by Dagbladet. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPS0VDYWR0b1VQZm10azRXWGNMVGt4Z0FQSFZvOVRyU0IzaC1Gemd6bTVDRVAyUmpFUzZ6TG94aDZya0xmczdodFhKSFR1MkhITk1QcTV6OC1JWlFlSWpCaEtFSUhhZmF0X2xsT3E0a3JYNmEzSldidkU5VG9FM0JsTVRONnQxM3AzQlZ5ZDJSYUo4dGR6ZEE?oc=5",
     "detectedAt": "2026-10-13T16:16:50.091Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823933",
+    "source": "Ruter",
+    "date": "2026-10-18",
+    "type": "unplanned",
+    "title": "Buss 30: Omkjøring",
+    "start": "12:00",
+    "end": "13:15",
+    "desc": "Mens gateløpet Bygdøymila pågår stopper ikke bussen på holdeplassene Bygdøynes, Herbernveien og Langvik. Nærmeste holdeplass er Fredriksborg.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-14T15:55:48.371Z"
   }
 ]
