@@ -1,11 +1,5 @@
 [
   {
-    "ship": "Amera",
-    "etaDate": "2026-10-12",
-    "reason": "Found vessel \"Amera\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-10-11T12:01:42.833Z"
-  },
-  {
     "ship": "Liberty of the Seas",
     "etaDate": "2026-10-13",
     "reason": "Found vessel \"Liberty of the Seas\" but couldn't read its live destination/ETA (status 404).",
