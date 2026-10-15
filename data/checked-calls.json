@@ -1,10 +1,5 @@
 [
   {
-    "ship": "Nieuw Statendam",
-    "etaDate": "2026-09-14",
-    "checkedAt": "2026-09-13T18:09:19.253Z"
-  },
-  {
     "ship": "AIDAbella",
     "etaDate": "2026-09-15",
     "checkedAt": "2026-09-14T11:39:47.408Z"
@@ -88,5 +83,10 @@
     "ship": "Liberty of the Seas",
     "etaDate": "2026-10-13",
     "checkedAt": "2026-10-12T14:18:13.382Z"
+  },
+  {
+    "ship": "MSC Preziosa",
+    "etaDate": "2026-10-16",
+    "checkedAt": "2026-10-15T10:47:33.552Z"
   }
 ]

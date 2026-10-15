@@ -1,8 +1,8 @@
 [
   {
-    "ship": "Liberty of the Seas",
-    "etaDate": "2026-10-13",
-    "reason": "Found vessel \"Liberty of the Seas\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-10-12T14:18:13.382Z"
+    "ship": "MSC Preziosa",
+    "etaDate": "2026-10-16",
+    "reason": "Found vessel \"MSC Preziosa\" but couldn't read its live destination/ETA (status 404).",
+    "checkedAt": "2026-10-15T10:47:33.552Z"
   }
 ]
