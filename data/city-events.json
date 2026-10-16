@@ -324,6 +324,18 @@
     "detectedAt": "2026-10-13T16:16:50.091Z"
   },
   {
+    "id": "police:26d077",
+    "source": "Politiloggen",
+    "date": "2026-10-16",
+    "type": "unplanned",
+    "title": "Trafikk — Ekebergtunnelen",
+    "start": "07:43",
+    "end": "08:33",
+    "desc": "Nødetatene er på vei til melding om et trafikkuhell i Ekebergtunnelen retning sentrum Det skal være et uhell mellom en bil og en motorsykkel. To felter i tunnelen er nå stengt som følge av ulykken, det blir derfor noe begrenset fremkommelighet mens nødetatene jobber på stedet. Politiet er fremme på stedet. Mc-fører er…",
+    "url": "https://politiloggen.politiet.no/",
+    "detectedAt": "2026-10-16T08:50:33.493Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:823933",
     "source": "Ruter",
     "date": "2026-10-18",
