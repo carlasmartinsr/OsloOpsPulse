@@ -1,10 +1,5 @@
 [
   {
-    "ship": "AIDAmar",
-    "etaDate": "2026-09-17",
-    "checkedAt": "2026-09-16T10:46:27.043Z"
-  },
-  {
     "ship": "Mein Schiff Relax",
     "etaDate": "2026-09-18",
     "checkedAt": "2026-09-17T10:53:32.437Z"
@@ -78,5 +73,10 @@
     "ship": "MSC Preziosa",
     "etaDate": "2026-10-16",
     "checkedAt": "2026-10-15T10:47:33.552Z"
+  },
+  {
+    "ship": "Mein Schiff Relax",
+    "etaDate": "2026-10-19",
+    "checkedAt": "2026-10-18T10:18:17.775Z"
   }
 ]
