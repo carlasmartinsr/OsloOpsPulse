@@ -358,5 +358,29 @@
     "desc": "Mens gateløpet Bygdøymila pågår stopper ikke bussen på holdeplassene Bygdøynes, Herbernveien og Langvik. Nærmeste holdeplass er Fredriksborg.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-14T15:55:48.371Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823943",
+    "source": "Ruter",
+    "date": "2026-10-23",
+    "type": "unplanned",
+    "title": "Omkjøring grunnet veiarbeid.",
+    "start": "22:00",
+    "end": null,
+    "desc": "Linje 81 betjener ikke holdeplassene mellom Jernbanetorget og Filipstad i retning Filipstad på grunn av veiarbeid.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-19T10:11:58.371Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823944",
+    "source": "Ruter",
+    "date": "2026-10-25",
+    "type": "unplanned",
+    "title": "Omkjøring grunnet veiarbeid.",
+    "start": "22:00",
+    "end": null,
+    "desc": "Linje 81 betjener ikke holdeplassene mellom Jernbanetorget og Filipstad i retning Filipstad på grunn av veiarbeid.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-19T10:11:58.371Z"
   }
 ]
