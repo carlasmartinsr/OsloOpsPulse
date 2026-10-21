@@ -412,10 +412,10 @@
     "source": "Ruter",
     "date": "2026-10-23",
     "type": "unplanned",
-    "title": "Omkjøring grunnet veiarbeid.",
+    "title": "Omkjøring grunnet veiarbeid",
     "start": "22:00",
     "end": null,
-    "desc": "Grunnet veiarbeid stopper ikke bussene ved Vika Atrium i retning mot Lysaker.",
+    "desc": "Grunnet veiarbeid stopper ikke bussene ved holdeplassene Nationaltheatret plattform N og Vika Atrium i retning mot Lysaker",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-20T11:06:55.987Z"
   },
@@ -436,10 +436,10 @@
     "source": "Ruter",
     "date": "2026-10-25",
     "type": "unplanned",
-    "title": "Omkjøring grunnet veiarbeid.",
+    "title": "Omkjøring grunnet veiarbeid",
     "start": "22:00",
     "end": null,
-    "desc": "Grunnet veiarbeid stopper ikke bussene ved Vika Atrium i retning mot Lysaker.",
+    "desc": "Grunnet veiarbeid stopper ikke bussene ved holdeplassene Nationaltheatret plattform N og Vika Atrium i retning mot Lysaker",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-20T11:06:55.987Z"
   }
