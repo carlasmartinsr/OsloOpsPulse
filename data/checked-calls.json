@@ -73,5 +73,15 @@
     "ship": "Mein Schiff Relax",
     "etaDate": "2026-10-19",
     "checkedAt": "2026-10-18T10:18:17.775Z"
+  },
+  {
+    "ship": "Trollfjord",
+    "etaDate": "2026-10-23",
+    "checkedAt": "2026-10-22T11:04:41.278Z"
+  },
+  {
+    "ship": "Mein Schiff Relax",
+    "etaDate": "2026-10-23",
+    "checkedAt": "2026-10-22T11:04:41.303Z"
   }
 ]
