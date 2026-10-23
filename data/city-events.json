@@ -360,6 +360,18 @@
     "detectedAt": "2026-10-14T15:55:48.371Z"
   },
   {
+    "id": "news:2026-10-20:unplanned",
+    "source": "News (E24)",
+    "date": "2026-10-20",
+    "type": "unplanned",
+    "title": "Demonstrasjon utenfor Stortinget",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by E24. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOTFBNY29Xa3h2WVljeFRXZGVtWURncExvTnhZNUJDcm9DZm9pWDYxaV9Xbk8zYzRiWkcxVzlHa2I1WndwUUQwRWowbFd4ZDZTb1JHRTN1bHpBRFpydEJ6bFFIZ29aeldlVWdWY2FRNy1XRHI5Q0k1RGRxenI3d0ZFVFNMYnltZw?oc=5",
+    "detectedAt": "2026-10-23T23:55:27.874Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:823948",
     "source": "Ruter",
     "date": "2026-10-20",
