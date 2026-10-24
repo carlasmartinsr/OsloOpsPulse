@@ -432,6 +432,18 @@
     "detectedAt": "2026-10-20T11:06:55.987Z"
   },
   {
+    "id": "news:2026-10-24:unplanned",
+    "source": "News (Avisa Oslo)",
+    "date": "2026-10-24",
+    "type": "unplanned",
+    "title": "Vy tog, Bane NOR | Stengt for togtrafikk mellom Lysaker og Nationaltheatret",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Avisa Oslo. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMUZYZVVtbGlZVHNaUFNwekR6RnMzdmwwQnpPOUNCNUpoaDM3YjVhMTN3dWxTeFFLdUo4a3pFTmxkUEJqNTZaNno0aUFRdzBDUDlsQi1vYzU4MFBpNFBmZ2JrRV8zc0hIdEhGa1J6ZHBrR0hOTlNHSFBpWFh0WVBoaDVfbDJFWjloV2QyS3BUb1IyTGc?oc=5",
+    "detectedAt": "2026-10-24T13:10:33.585Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:823944",
     "source": "Ruter",
     "date": "2026-10-25",
