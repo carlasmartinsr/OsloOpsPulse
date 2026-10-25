@@ -73,5 +73,10 @@
     "ship": "Mein Schiff Relax",
     "etaDate": "2026-10-23",
     "checkedAt": "2026-10-22T11:04:41.303Z"
+  },
+  {
+    "ship": "AIDAnova",
+    "etaDate": "2026-10-26",
+    "checkedAt": "2026-10-25T10:37:28.532Z"
   }
 ]
