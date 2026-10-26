@@ -486,7 +486,7 @@
     "type": "unplanned",
     "title": "Linje 31 stopper ikke på Jernbanetorget",
     "start": "12:07",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Linje 31 stopper ikke på Jernbanetorget. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -498,7 +498,7 @@
     "type": "unplanned",
     "title": "Linje 37 stopper ikke på Jernbanetorget",
     "start": "12:07",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Linje 37 stopper ikke på Jernbanetorget. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -510,7 +510,7 @@
     "type": "unplanned",
     "title": "Linje 60 stopper ikke mellom Vippetangen og Norbygata",
     "start": "12:12",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Linje 60 stopper ikke mellom Vippetangen og Norbygata. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -522,7 +522,7 @@
     "type": "unplanned",
     "title": "Linje 54 stopper ikke på Jernbanetorget",
     "start": "12:15",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Linje 54 stopper ikke på Jernbanetorget. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -534,7 +534,7 @@
     "type": "unplanned",
     "title": "Andre hendelser — Sentrum",
     "start": "12:26",
-    "end": "12:47",
+    "end": "20:44",
     "desc": "Vi er sammen med brannvesenet ved Strandgata 19 i Oslo sentrum. Der er det en tårnkran som har fått en skjevstilling, som igjen medfører økt risiko for at kranen kan kollapse. Som følge av dette har vi sperret av deler av området rundt, samt evakuert et tilstøtende bygg. Vi er i dialog med ansvarlig entreprenør på ste…",
     "url": "https://politiloggen.politiet.no/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -546,7 +546,7 @@
     "type": "unplanned",
     "title": "Linje 85 stopper ikke på Jernbanetorget",
     "start": "12:37",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Linje 85 stopper ikke på Jernbanetorget. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -558,7 +558,7 @@
     "type": "unplanned",
     "title": "Linje 13 kjører ikke mellom Bjørvika og Øvre Slottsgate.",
     "start": "12:42",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Trikkene kjører kun på strekningen Ljabru - Bjørvika og Thune - Øvre Slottsgate. Trikkene kjører ikke mellom Bjørvika og Øvre Slottsgate. Dette skyldes stengt vei i Oslo sentrum.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -570,7 +570,7 @@
     "type": "unplanned",
     "title": "Linje 19 kjører ikke mellom Stortorvet og Bjørvika",
     "start": "12:42",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Trikkene kjører kun på strekningen Ljabru - Bjørvika og Majorstuen - Stortorvet. Trikkene kjører ikke mellom Stortorvet og Bjørvika. Dette skyldes stengt vei i Oslo sentrum.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
@@ -582,7 +582,7 @@
     "type": "unplanned",
     "title": "Linje 74 stopper ikke fra Jernbanetorget til Jernbanetorget",
     "start": "13:06",
-    "end": "21:00",
+    "end": "23:59",
     "desc": "Linje 74 stopper ikke fra og med Jernbanetorget til og med Jernbanetorget. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
