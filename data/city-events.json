@@ -475,7 +475,7 @@
     "title": "Oslo sentrum: Politiet: Alle sperringene er opphevet",
     "start": null,
     "end": null,
-    "desc": "Headline reported by TV 2. 1 other report the same day (Avisa Oslo). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "desc": "Headline reported by TV 2. 2 other reports the same day (VårtOslo, Avisa Oslo). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pbk5PYmtvRld4ZkRRc0Q0N1lDTHNyS2VZVGs3emJHeG9qMzlub3BMeEV4LTF0cER3RjczS3JrVUJPQXFaRFJwWGZUeTk3c2JVcVEwdXpXQ1NZckZSaEVzTzB6OVY5MTg2Z1VlM053WGhnaExOdmFWc2VKSE9Eenc?oc=5",
     "detectedAt": "2026-10-26T14:56:41.828Z"
   },
@@ -622,5 +622,17 @@
     "desc": "Linje 84E stopper ikke på Jernbanetorget. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-73727-1",
+    "source": "Ruter",
+    "date": "2026-10-27",
+    "type": "unplanned",
+    "title": "Avgangen innstilt",
+    "start": "11:03",
+    "end": "11:28",
+    "desc": "Avgangen fra Kolsås kl. 11:03 i retning Sandvika bussterminal er innstilt. Dette skyldes en stengt vei.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-27T10:15:42.529Z"
   }
 ]
