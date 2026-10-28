@@ -469,14 +469,14 @@
   },
   {
     "id": "news:2026-10-26:unplanned",
-    "source": "News (TV 2)",
+    "source": "News (VårtOslo)",
     "date": "2026-10-26",
     "type": "unplanned",
-    "title": "Oslo sentrum: Politiet: Alle sperringene er opphevet",
+    "title": "(+) =Oslo-selgere stengt ute i sentrum",
     "start": null,
     "end": null,
-    "desc": "Headline reported by TV 2. 2 other reports the same day (VårtOslo, Avisa Oslo). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pbk5PYmtvRld4ZkRRc0Q0N1lDTHNyS2VZVGs3emJHeG9qMzlub3BMeEV4LTF0cER3RjczS3JrVUJPQXFaRFJwWGZUeTk3c2JVcVEwdXpXQ1NZckZSaEVzTzB6OVY5MTg2Z1VlM053WGhnaExOdmFWc2VKSE9Eenc?oc=5",
+    "desc": "Headline reported by VårtOslo. 3 other reports the same day (TV 2, VårtOslo, Avisa Oslo). Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYUdaSEVDeDc4RkYzb25sekxrMHpDLUFrektvYTRHT0JIMkF1QjZ3dVZpcG9CQVZYVWRjWjJsVFlEanFNcXFsZWQ0TnpDbmJ1Y3BvaGZrbkdYeXRHdmwwdm4zRjJXWW00cnE4YlRWTEVYY0pxMW9FSDh5OWdHU3RqREpqVF9FRmRVSXMtLThFX2ViaUdFWmtxcHBjOWxSZw?oc=5",
     "detectedAt": "2026-10-26T14:56:41.828Z"
   },
   {
