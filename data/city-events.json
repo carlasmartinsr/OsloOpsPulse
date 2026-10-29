@@ -528,18 +528,6 @@
     "detectedAt": "2026-10-26T14:56:41.828Z"
   },
   {
-    "id": "police:26zb4w",
-    "source": "Politiloggen",
-    "date": "2026-10-26",
-    "type": "unplanned",
-    "title": "Andre hendelser — Sentrum",
-    "start": "12:26",
-    "end": "23:23",
-    "desc": "Vi er sammen med brannvesenet ved Strandgata 19 i Oslo sentrum. Der er det en tårnkran som har fått en skjevstilling, som igjen medfører økt risiko for at kranen kan kollapse. Som følge av dette har vi sperret av deler av området rundt, samt evakuert et tilstøtende bygg. Vi er i dialog med ansvarlig entreprenør på ste…",
-    "url": "https://politiloggen.politiet.no/",
-    "detectedAt": "2026-10-26T14:56:41.828Z"
-  },
-  {
     "id": "ruter:RUT:SituationNumber:2026-73458-1",
     "source": "Ruter",
     "date": "2026-10-26",
@@ -624,6 +612,18 @@
     "detectedAt": "2026-10-26T14:56:41.828Z"
   },
   {
+    "id": "police:26zb4w",
+    "source": "Politiloggen",
+    "date": "2026-10-26",
+    "type": "unplanned",
+    "title": "Andre hendelser — Sentrum",
+    "start": "20:44",
+    "end": "23:23",
+    "desc": "Demonteringen av kranen er godt i gang. Vi forventer at det meste av kranen er demontert i løpet av et par timer og at sperringene da kan oppheves. Arbeidet med demontering er i sluttfasen. Alle sperringene er nå opphevet.",
+    "url": "https://politiloggen.politiet.no/",
+    "detectedAt": "2026-10-26T14:56:41.828Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:2026-73727-1",
     "source": "Ruter",
     "date": "2026-10-27",
@@ -634,5 +634,41 @@
     "desc": "Avgangen fra Kolsås kl. 11:03 i retning Sandvika bussterminal er innstilt. Dette skyldes en stengt vei.",
     "url": "https://ruter.no/en/traffic-info/",
     "detectedAt": "2026-10-27T10:15:42.529Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-74081-1",
+    "source": "Ruter",
+    "date": "2026-11-01",
+    "type": "unplanned",
+    "title": "Buss 240, 245 og 270 har omkjøring",
+    "start": "17:30",
+    "end": "19:00",
+    "desc": "Bussene 240, 245 og 270 har omkjøring mensarrangementet Hjertefred pågår, og stopper ikkepå Elias Smiths vei og Sandvika storsente",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-29T16:43:20.749Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-74081-2",
+    "source": "Ruter",
+    "date": "2026-11-01",
+    "type": "unplanned",
+    "title": "Buss 240, 245 og 270 har omkjøring",
+    "start": "17:30",
+    "end": "19:00",
+    "desc": "Bussene 240, 245 og 270 har omkjøring mensarrangementet Hjertefred pågår, og stopper ikkepå Elias Smiths vei og Sandvika storsente",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-29T16:43:20.749Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:2026-74081-3",
+    "source": "Ruter",
+    "date": "2026-11-01",
+    "type": "unplanned",
+    "title": "Buss 240, 245 og 270 har omkjøring",
+    "start": "17:30",
+    "end": "19:00",
+    "desc": "Bussene 240, 245 og 270 har omkjøring mensarrangementet Hjertefred pågår, og stopper ikkepå Elias Smiths vei og Sandvika storsente",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-10-29T16:43:20.749Z"
   }
 ]
