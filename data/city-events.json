@@ -617,9 +617,9 @@
     "date": "2026-10-26",
     "type": "unplanned",
     "title": "Andre hendelser — Sentrum",
-    "start": "20:44",
-    "end": "23:23",
-    "desc": "Demonteringen av kranen er godt i gang. Vi forventer at det meste av kranen er demontert i løpet av et par timer og at sperringene da kan oppheves. Arbeidet med demontering er i sluttfasen. Alle sperringene er nå opphevet.",
+    "start": "23:23",
+    "end": null,
+    "desc": "Arbeidet med demontering er i sluttfasen. Alle sperringene er nå opphevet.",
     "url": "https://politiloggen.politiet.no/",
     "detectedAt": "2026-10-26T14:56:41.828Z"
   },
