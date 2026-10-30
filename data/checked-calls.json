@@ -1,15 +1,5 @@
 [
   {
-    "ship": "AIDAbella",
-    "etaDate": "2026-09-29",
-    "checkedAt": "2026-09-28T12:47:23.750Z"
-  },
-  {
-    "ship": "Nieuw Statendam",
-    "etaDate": "2026-09-29",
-    "checkedAt": "2026-09-28T12:47:23.885Z"
-  },
-  {
     "ship": "Mein Schiff 7",
     "etaDate": "2026-10-01",
     "checkedAt": "2026-09-30T11:50:58.151Z"
@@ -68,5 +58,10 @@
     "ship": "Mein Schiff Flow",
     "etaDate": "2026-10-29",
     "checkedAt": "2026-10-28T12:01:36.597Z"
+  },
+  {
+    "ship": "Sky Princess",
+    "etaDate": "2026-10-31",
+    "checkedAt": "2026-10-30T12:03:21.939Z"
   }
 ]
