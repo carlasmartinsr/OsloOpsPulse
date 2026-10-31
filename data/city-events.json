@@ -636,6 +636,18 @@
     "detectedAt": "2026-10-27T10:15:42.529Z"
   },
   {
+    "id": "police:26zb0c",
+    "source": "Politiloggen",
+    "date": "2026-10-31",
+    "type": "event",
+    "title": "Brann — Grønland",
+    "start": "00:55",
+    "end": "01:23",
+    "desc": "Nødetatene er på vei til Grønland etter melding om røykutvikling fra en boligblokk hvor brannalarmen går. Det er ikke meldt om flammer. Politiet bistår brannvesenet på stedet med å evakuere beboere fra bygget. Det er fremdeles ikke sett flammer, men det er fortsatt noe røyk i området. Vi mistenker dette kan stamme fra…",
+    "url": "https://politiloggen.politiet.no/",
+    "detectedAt": "2026-10-31T04:40:17.301Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:2026-74081-1",
     "source": "Ruter",
     "date": "2026-11-01",
