@@ -1,11 +1,5 @@
 [
   {
-    "ship": "Mein Schiff Flow",
-    "etaDate": "2026-10-29",
-    "reason": "Found vessel \"Mein Schiff Flow\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-10-28T12:01:36.597Z"
-  },
-  {
     "ship": "Sky Princess",
     "etaDate": "2026-10-31",
     "reason": "Found vessel \"Sky Princess\" but couldn't read its live destination/ETA (status 404).",
