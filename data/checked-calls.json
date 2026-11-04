@@ -58,5 +58,10 @@
     "ship": "Sky Princess",
     "etaDate": "2026-10-31",
     "checkedAt": "2026-10-30T12:03:21.939Z"
+  },
+  {
+    "ship": "AIDAluna",
+    "etaDate": "2026-11-05",
+    "checkedAt": "2026-11-04T13:42:36.154Z"
   }
 ]
