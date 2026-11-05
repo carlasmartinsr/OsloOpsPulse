@@ -1,10 +1,5 @@
 [
   {
-    "ship": "Sky Princess",
-    "etaDate": "2026-10-05",
-    "checkedAt": "2026-10-04T11:43:29.515Z"
-  },
-  {
     "ship": "Trollfjord",
     "etaDate": "2026-10-09",
     "checkedAt": "2026-10-08T12:43:59.678Z"
@@ -63,5 +58,10 @@
     "ship": "AIDAluna",
     "etaDate": "2026-11-05",
     "checkedAt": "2026-11-04T13:42:36.154Z"
+  },
+  {
+    "ship": "Trollfjord",
+    "etaDate": "2026-11-06",
+    "checkedAt": "2026-11-05T13:55:23.470Z"
   }
 ]
