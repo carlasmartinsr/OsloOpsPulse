@@ -264,30 +264,6 @@
     "detectedAt": "2026-10-02T10:56:30.498Z"
   },
   {
-    "id": "ruter:RUT:SituationNumber:823878",
-    "source": "Ruter",
-    "date": "2026-10-02",
-    "type": "event",
-    "title": "Buss 31 stopper ikke på Fornebuparken.",
-    "start": "17:00",
-    "end": "23:59",
-    "desc": "Benytt derfor holdpelass Telenor Fornebu. Dette skyldes konsert på Unity arena.",
-    "url": "https://ruter.no/en/traffic-info/",
-    "detectedAt": "2026-09-30T10:59:12.499Z"
-  },
-  {
-    "id": "ruter:RUT:SituationNumber:823879",
-    "source": "Ruter",
-    "date": "2026-10-02",
-    "type": "event",
-    "title": "Buss 31 stopper ikke på Fornebuparken og Lilløyveien.",
-    "start": "21:00",
-    "end": "23:59",
-    "desc": "Benytt derfor holdeplass Telenor Fornebu. Dette skyldes konsert på Unity arena.",
-    "url": "https://ruter.no/en/traffic-info/",
-    "detectedAt": "2026-09-30T10:59:12.499Z"
-  },
-  {
     "id": "ruter:RUT:SituationNumber:823909",
     "source": "Ruter",
     "date": "2026-10-02",
@@ -718,6 +694,30 @@
     "desc": "Headline reported by Sagene Avis. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNEVYbjZuQTl4ZE0tZFhSN0t6Ynp5ZWxKWXV3V1g5YzQ4RmRtNXA5Uktqa09nUDlUWW8xaTFDV0RCaThUeGpDaXBUclRrb3hxaUlJbU92SW5BczNjZHJWY1A5N0FqMXBlOXk1a190aUtGUk5tSUdOU0NoRWlQWEdTNk5MY1gzYWNheGlWZE5uVGdadWZ5NHExQWstSDdxbGlzSUFZ?oc=5",
     "detectedAt": "2026-11-04T22:04:12.900Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823878",
+    "source": "Ruter",
+    "date": "2026-11-08",
+    "type": "event",
+    "title": "Buss 31 stopper ikke på Fornebuparken.",
+    "start": "17:00",
+    "end": "23:59",
+    "desc": "Benytt derfor holdpelass Telenor Fornebu. Dette skyldes konsert på Unity arena.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-30T10:59:12.499Z"
+  },
+  {
+    "id": "ruter:RUT:SituationNumber:823879",
+    "source": "Ruter",
+    "date": "2026-11-08",
+    "type": "event",
+    "title": "Buss 31 stopper ikke på Fornebuparken og Lilløyveien.",
+    "start": "21:00",
+    "end": "23:59",
+    "desc": "Benytt derfor holdeplass Telenor Fornebu. Dette skyldes konsert på Unity arena.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-09-30T10:59:12.499Z"
   },
   {
     "id": "watch:bogstadveien-markedsdag:2027-05-22",
