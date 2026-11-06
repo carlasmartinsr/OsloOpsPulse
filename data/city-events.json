@@ -696,6 +696,18 @@
     "detectedAt": "2026-11-04T22:04:12.900Z"
   },
   {
+    "id": "news:2026-11-06:unplanned",
+    "source": "News (Avisa Oslo)",
+    "date": "2026-11-06",
+    "type": "unplanned",
+    "title": "Stengte dører nederst på Karl Johan. Lokalet er nærmest ribbet for inventar",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Avisa Oslo. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOHhUTmFycGJ0RWNRZWFuc01uTTJnOUp6djBlRF9ITDNUVFpZMERHMjVYdFpQQkI2UEZ6ME9fakVOV0k2ZlVTYUVoQmRvTU9VeU9hNUlmODRtb05pb1lTemdOMkJNM3FhNkx1Vi02eEJ3WmNfNkZ4S09DVmZnTUVlMTBoUFo1S2dQa2RIWGJQaGdNeVh4VmRIVE5odw?oc=5",
+    "detectedAt": "2026-11-06T20:17:46.254Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:823878",
     "source": "Ruter",
     "date": "2026-11-08",
