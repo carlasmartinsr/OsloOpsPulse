@@ -1,11 +1,5 @@
 [
   {
-    "ship": "AIDAluna",
-    "etaDate": "2026-11-05",
-    "reason": "Found vessel \"AIDAluna\" but couldn't read its live destination/ETA (status 404).",
-    "checkedAt": "2026-11-04T13:42:36.154Z"
-  },
-  {
     "ship": "Trollfjord",
     "etaDate": "2026-11-06",
     "reason": "AIS reports \"Trollfjord\" is currently headed to \"NO KRS\", not Oslo, ahead of its scheduled 2026-11-06 call.",
