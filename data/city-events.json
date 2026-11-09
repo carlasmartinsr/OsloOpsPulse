@@ -732,6 +732,18 @@
     "detectedAt": "2026-09-30T10:59:12.499Z"
   },
   {
+    "id": "ruter:RUT:SituationNumber:2026-75091-1",
+    "source": "Ruter",
+    "date": "2026-11-14",
+    "type": "event",
+    "title": "Linje 25 stopper ikke mellom Majorstuen og Ullevål stadion og mellom Vestre Aker kirke og…",
+    "start": "16:00",
+    "end": "20:30",
+    "desc": "Linje 25 stopper ikke mellom Majorstuen og Ullevål stadion og mellom Vestre Aker kirke og Blindern vgs.. Dette skyldes et arrangement.",
+    "url": "https://ruter.no/en/traffic-info/",
+    "detectedAt": "2026-11-09T14:12:49.800Z"
+  },
+  {
     "id": "watch:bogstadveien-markedsdag:2027-05-22",
     "source": "Bogstadveien.no",
     "date": "2027-05-22",
