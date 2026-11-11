@@ -58,5 +58,10 @@
     "ship": "Trollfjord",
     "etaDate": "2026-11-06",
     "checkedAt": "2026-11-05T13:55:23.470Z"
+  },
+  {
+    "ship": "AIDAnova",
+    "etaDate": "2026-11-12",
+    "checkedAt": "2026-11-11T13:28:45.671Z"
   }
 ]
