@@ -708,6 +708,18 @@
     "detectedAt": "2026-11-06T20:17:46.254Z"
   },
   {
+    "id": "news:2026-11-08:unplanned",
+    "source": "News (Aftenposten)",
+    "date": "2026-11-08",
+    "type": "unplanned",
+    "title": "Stortinget T-banestasjon stengt på ubestemt tid. Også flere holdeplasser for trikken holdes stengt.",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Aftenposten. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYURqTHdCYmU5OF9jVDZjM3NsbVVqcGEzRkM4ekRYcEM1VmJmUENaR282TXJteUpBMkg3OFhMQnplbUhWV0dGRjNNMmY4aDU2Z3M3QXlMbGw1Vng2STFjeUUwbzNVeEFvT2hyRW1UdTlkaEpfRnRvc1NBNVhYYTVFekkyOTFvS0RHaVp5cjcyanZCajZzcENLQW42Rkk?oc=5",
+    "detectedAt": "2026-11-12T12:19:44.916Z"
+  },
+  {
     "id": "ruter:RUT:SituationNumber:823878",
     "source": "Ruter",
     "date": "2026-11-08",
