@@ -745,14 +745,14 @@
   },
   {
     "id": "news:2026-11-14:unplanned",
-    "source": "News (itromso.no)",
+    "source": "News (NRK)",
     "date": "2026-11-14",
     "type": "unplanned",
-    "title": "Derfor var sentrum stengt lørdag",
+    "title": "Demonstrasjon utenfor Stortinget",
     "start": null,
     "end": null,
-    "desc": "Headline reported by itromso.no. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GcGYtYnM3S1FFR05MelVFdHd1em1jai1DUmEzWjNQbzlubGw4YUJ6cGZfNHExV0ZvMi1EbmRXZUZ3NHo2OWdnVnczN2RPM0IzYTgwdjF2UkNwR1F6LW10b0t1bllSUlZsQThESUluNmFMZw?oc=5",
+    "desc": "Headline reported by NRK. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1GcFJaVU9KbXNDeEtrb3RGVmF4Sk0xVjNnalg2TXNISVY0a1RQeWMzWFNPWXZqWDdXTHhzRjRET1VvV3U0TE1BUUY3Z1dhdzhsMlhLQi1jZnBrWkVjOXhZRkpfemR0ai1VZ3BkeEt5bEp3ajBOWUE?oc=5",
     "detectedAt": "2026-11-15T01:12:20.696Z"
   },
   {
