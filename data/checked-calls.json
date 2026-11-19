@@ -1,10 +1,5 @@
 [
   {
-    "ship": "Mein Schiff Relax",
-    "etaDate": "2026-10-19",
-    "checkedAt": "2026-10-18T10:18:17.775Z"
-  },
-  {
     "ship": "Trollfjord",
     "etaDate": "2026-10-23",
     "checkedAt": "2026-10-22T11:04:41.278Z"
@@ -43,5 +38,10 @@
     "ship": "AIDAnova",
     "etaDate": "2026-11-12",
     "checkedAt": "2026-11-11T13:28:45.671Z"
+  },
+  {
+    "ship": "Trollfjord",
+    "etaDate": "2026-11-20",
+    "checkedAt": "2026-11-19T15:10:12.853Z"
   }
 ]
