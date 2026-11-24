@@ -780,6 +780,18 @@
     "detectedAt": "2026-11-16T18:05:31.844Z"
   },
   {
+    "id": "news:2026-11-24:unplanned",
+    "source": "News (Avisa Oslo)",
+    "date": "2026-11-24",
+    "type": "unplanned",
+    "title": "Sperrer av område i sentrum. Demonstranter båret vekk utenfor – dette skjer på innsiden",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Avisa Oslo. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZ09JSGpibGxrdHF1clMyS2ZaeU9YUXJ2Qk40a1NseWtQWmxBdFdZT1hiTVhnZ0VqaElwLV9OU3pheUdVQVVRX2pVbUZZRm9paE5hVlNUT3RadFJGZFdjbDJTZ0ZUMnVvSmRCTmdZS1djTWlvUEoyMlRfM2ViZ2ZvZk1ERXNvWFBQN2RrdFUxZkxLdkxTVnotZWk0QVVEelFFc1o2cFZNVTdWVUw3N3A3UVV5d2llUVhn?oc=5",
+    "detectedAt": "2026-11-24T20:46:09.738Z"
+  },
+  {
     "id": "watch:bogstadveien-markedsdag:2027-05-22",
     "source": "Bogstadveien.no",
     "date": "2027-05-22",
