@@ -792,6 +792,18 @@
     "detectedAt": "2026-11-24T20:46:09.738Z"
   },
   {
+    "id": "news:2026-11-26:unplanned",
+    "source": "News (Avisa Oslo)",
+    "date": "2026-11-26",
+    "type": "unplanned",
+    "title": "Fikk nådeløs beskjed i retten. Spesielt utested i sentrum stengt: - Først og fremst trist",
+    "start": null,
+    "end": null,
+    "desc": "Headline reported by Avisa Oslo. Auto-detected from the news feed — the date is inferred from the headline, so check dates and times.",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMjFqaWI3Yjktb3FBOVBFaG55Mng4RUtQcllKWERqUVJPNDZRLWFOYnM3Z0x6aE1WellXNXZOSG9fNXZLZVFJbzYxOFdyeG1hbXVTd3pXUWZ4dDNOak5mMGtibXJBdkxNRFMzQVJiQWdFQ3N2UGk5TWdrS2ZMT19YcExBcm5fZzFtN0dDM2FXQW0xc0VCc3owSVB5MHpBc2VqNWpQcnhhTUhjQVVCVVJna0VCSFU5X1hDdkV1WTY3WmJFU3MxeUd4Sw?oc=5",
+    "detectedAt": "2026-11-26T05:19:00.065Z"
+  },
+  {
     "id": "watch:bogstadveien-markedsdag:2027-05-22",
     "source": "Bogstadveien.no",
     "date": "2027-05-22",
